@@ -28,5 +28,8 @@ map("n", "<C-Right>", ":vertical resize +2<cr>", opts)
 -- Insert Mode --
 map("i", "<Leader>j", "<Esc><Right>", opts)
 
+-- Visual Mode --
+map("v", "<Leader>j", "<Esc>", opts)
+
 -- Terminal Mode --
 map("t", "<Leader>hh", "<C-\\><C-n>", opts)
