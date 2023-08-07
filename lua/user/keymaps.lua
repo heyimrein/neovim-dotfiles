@@ -28,6 +28,12 @@ map("n", "<C-Right>", ":vertical resize +2<cr>", opts)
 -- Insert Mode --
 map("i", "<Leader>j", "<Esc><Right>", opts)
 
+-- Navigation
+map("i", "<A-h>", "<Left>", opts)
+map("i", "<A-j>", "<Down>", opts)
+map("i", "<A-k>", "<Up>", opts)
+map("i", "<A-l>", "<Right>", opts)
+
 -- Visual Mode --
 map("v", "<Leader>j", "<Esc>", opts)
 
