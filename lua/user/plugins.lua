@@ -34,9 +34,12 @@ return require('packer').startup(function(use)
 	use "nvim-telescope/telescope.nvim"
 
 	use "nvim-treesitter/nvim-treesitter"
+	use "alvan/vim-closetag"
 
 	use "nvim-tree/nvim-tree.lua"
 	use "nvim-tree/nvim-web-devicons"
+
+	use "jiangmiao/auto-pairs"
 
 	use "andweeb/presence.nvim"
 
