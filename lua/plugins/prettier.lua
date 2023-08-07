@@ -1,3 +1,5 @@
 local prettier = require "prettier"
 
-prettier.setup {}
+prettier.setup {
+	bin = "prettier"
+}
