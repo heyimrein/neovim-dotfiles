@@ -4,8 +4,9 @@ local options = {
 	numberwidth = 4,
 	smartindent = true,
 	tabstop = 2,
+	showtabstop = 4,
+	softtabstop = 2,
 	shiftwidth = 2,
-	showtabline = 2,
 	scrolloff = 8,
 	list = true,
 }
