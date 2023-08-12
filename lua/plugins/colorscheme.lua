@@ -1,1 +1,1 @@
-vim.cmd "colorscheme monokai"
+vim.cmd "color github_dark"
