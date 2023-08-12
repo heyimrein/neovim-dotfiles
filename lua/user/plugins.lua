@@ -34,7 +34,9 @@ return require('packer').startup(function(use)
 	use "nvim-telescope/telescope.nvim"
 
 	use "nvim-treesitter/nvim-treesitter"
-	use "alvan/vim-closetag"
+	use "windwp/nvim-ts-autotag"
+
+	use "numToStr/Comment.nvim"
 
 	use "nvim-tree/nvim-tree.lua"
 	use "nvim-tree/nvim-web-devicons"
@@ -43,8 +45,7 @@ return require('packer').startup(function(use)
 
 	use "andweeb/presence.nvim"
 
-	use "ray-x/starry.nvim"
-	use "kvrohit/mellow.nvim"
+	use "projekt0n/github-nvim-theme"
 	use "zootedb0t/citruszest.nvim"
 	use "xiyaowong/transparent.nvim"
 
