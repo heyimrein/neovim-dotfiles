@@ -1,6 +1,7 @@
 require "plugins.nvim-tree"
 require "plugins.lsp"
 require "plugins.treesitter"
+require "plugins.autotag"
 require "plugins.telescope"
 require "plugins.cmp"
 require "plugins.null-ls"
