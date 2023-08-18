@@ -1,1 +1,1 @@
-vim.cmd "color github_dark"
+vim.cmd "color citruszest"
