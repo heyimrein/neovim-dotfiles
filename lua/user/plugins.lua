@@ -38,6 +38,8 @@ return require('packer').startup(function(use)
 
 	use "numToStr/Comment.nvim"
 
+	use "ggandor/leap.nvim"
+
 	use "nvim-tree/nvim-tree.lua"
 	use "nvim-tree/nvim-web-devicons"
 
@@ -47,6 +49,8 @@ return require('packer').startup(function(use)
 
 	use "projekt0n/github-nvim-theme"
 	use "zootedb0t/citruszest.nvim"
+	use "kdheepak/monochrome.nvim"
+	use "hoprr/calvera-dark.nvim"
 	use "xiyaowong/transparent.nvim"
 
 	if packer_bootstrap then
