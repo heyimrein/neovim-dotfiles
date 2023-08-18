@@ -12,6 +12,7 @@ map("", "<Leader>src", ":source $MYVIMRC<CR>", opts)
 -- Normal Mode --
 map("n", "<C-z>", ":undo<CR>", opts)               -- Undo
 map("n", "<Leader>q", ":vertical split<CR>", opts) -- Split Vertically
+map("n", "<Leader>n", cmd "noh", opts)
 
 -- Window Navigation
 map("n", "<C-h>", "<C-w>h", opts)
