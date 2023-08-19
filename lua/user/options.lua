@@ -7,11 +7,11 @@ local options = {
 	softtabstop = 2,
 	shiftwidth = 2,
 	scrolloff = 8,
-	list = true,
+	list = false,
 	hlsearch = false,
 }
 
-vim.opt.listchars = { tab = "⁖⁖", lead = "⁖" }
+vim.opt.listchars = {}
 
 for k, v in pairs(options) do
 	vim.o[k] = v
