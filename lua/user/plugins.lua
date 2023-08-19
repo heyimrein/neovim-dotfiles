@@ -37,6 +37,7 @@ return require('packer').startup(function(use)
 	use "windwp/nvim-ts-autotag"
 
 	use "numToStr/Comment.nvim"
+	use "lukas-reineke/indent-blankline.nvim"
 
 	use "ggandor/leap.nvim"
 
