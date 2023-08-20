@@ -1,5 +1,6 @@
 local opts = { noremap = true, silent = true }
-local map = vim.api.nvim_set_keymap
+local map = vim.keymap.set
+local bmap = vim.api.nvim_buf_set_keymap
 local cmd = vim.cmd
 
 vim.g.mapleader = "\\"
@@ -8,11 +9,11 @@ vim.g.maplocalleader = "\\"
 -- Any Mode --
 map("", "<Leader>j", "<Esc><Right>", opts)
 map("", "<Leader>src", ":source $MYVIMRC<CR>", opts)
+map("n", "<Leader>h", ":lua vim.lsp.buf.hover()<CR>", opts)
 
 -- Normal Mode --
 map("n", "<C-z>", ":undo<CR>", opts)               -- Undo
 map("n", "<Leader>q", ":vertical split<CR>", opts) -- Split Vertically
-map("n", "<Leader>n", cmd "noh", opts)
 
 -- Window Navigation
 map("n", "<C-h>", "<C-w>h", opts)
@@ -37,6 +38,3 @@ map("i", "<A-l>", "<Right>", opts)
 
 -- Visual Mode --
 map("v", "<Leader>j", "<Esc>", opts)
-
--- Terminal Mode --
-map("t", "<Leader>hh", "<C-\\><C-n>", opts)
