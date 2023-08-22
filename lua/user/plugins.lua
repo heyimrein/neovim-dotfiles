@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
 
 	use "nvim-treesitter/nvim-treesitter"
 	use "windwp/nvim-ts-autotag"
+	use "filipdutescu/renamer.nvim"
 
 	use "numToStr/Comment.nvim"
 	use "lukas-reineke/indent-blankline.nvim"
