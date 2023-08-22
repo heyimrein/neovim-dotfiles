@@ -6,7 +6,7 @@ local options = {
 	tabstop = 2,
 	softtabstop = 2,
 	shiftwidth = 2,
-	scrolloff = 8,
+	scrolloff = 16,
 	list = false,
 	hlsearch = false,
 }
