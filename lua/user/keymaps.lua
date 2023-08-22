@@ -18,6 +18,8 @@ map("", "K", "<Nop>", opts)
 map("n", "<C-z>", ":undo<CR>", opts)               -- Undo
 map("n", "<Leader>q", ":vertical split<CR>", opts) -- Split Vertically
 
+map("n", "rr", vim.lsp.buf.rename, opts)
+
 -- Center on Vertical Navigation
 -- map("n", "j", "jzz", opts)
 -- map("n", "k", "kzz", opts)
