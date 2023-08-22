@@ -11,9 +11,16 @@ map("", "<Leader>j", "<Esc><Right>", opts)
 map("", "<Leader>src", ":source $MYVIMRC<CR>", opts)
 map("n", "<Leader>h", ":lua vim.lsp.buf.hover()<CR>", opts)
 
+-- Unmaps
+map("", "K", "<Nop>", opts)
+
 -- Normal Mode --
 map("n", "<C-z>", ":undo<CR>", opts)               -- Undo
 map("n", "<Leader>q", ":vertical split<CR>", opts) -- Split Vertically
+
+-- Center on Vertical Navigation
+-- map("n", "j", "jzz", opts)
+-- map("n", "k", "kzz", opts)
 
 -- Window Navigation
 map("n", "<C-h>", "<C-w>h", opts)
