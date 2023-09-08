@@ -1,1 +1,1 @@
-vim.cmd "color citruszest"
+vim.cmd "color oxocarbon"
