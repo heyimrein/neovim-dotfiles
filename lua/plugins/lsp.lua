@@ -1,20 +1,17 @@
-require "mason".setup()
-require "mason-lspconfig".setup {
-	ensure_installed = { "lua_ls", "rust_analyzer", "html", "cssls", "tsserver", "pyright" }
-}
-
 local lsps = {
-	"lua_ls",
+	-- "lua_ls",
 	"rust_analyzer",
 	"html",
 	"cssls",
 	"tsserver",
 	"pyright",
 }
-local forms = {
-	"autopep8",
-	"prettier",
+
+require "mason".setup()
+require "mason-lspconfig".setup {
+	ensure_installed = lsps
 }
+
 local lsp = require "lspconfig"
 local capabilities = require "cmp_nvim_lsp".default_capabilities()
 local format = require "lsp-format"
