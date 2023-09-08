@@ -55,6 +55,7 @@ return require('packer').startup(function(use)
 	use "kdheepak/monochrome.nvim"
 	use "hoprr/calvera-dark.nvim"
 	use "nyoom-engineering/oxocarbon.nvim"
+	use "xero/miasma.nvim"
 	use "xiyaowong/transparent.nvim"
 
 	if packer_bootstrap then
