@@ -50,13 +50,13 @@ return require('packer').startup(function(use)
 
 	use "andweeb/presence.nvim"
 
+	use "xiyaowong/transparent.nvim"
 	use "projekt0n/github-nvim-theme"
 	use "zootedb0t/citruszest.nvim"
 	use "kdheepak/monochrome.nvim"
 	use "hoprr/calvera-dark.nvim"
 	use "nyoom-engineering/oxocarbon.nvim"
 	use "xero/miasma.nvim"
-	use "xiyaowong/transparent.nvim"
 
 	if packer_bootstrap then
 		require('packer').sync()
