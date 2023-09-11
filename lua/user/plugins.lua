@@ -18,7 +18,6 @@ return require('packer').startup(function(use)
 	use "williamboman/mason-lspconfig.nvim"
 	use "neovim/nvim-lspconfig"
 
-	use "lukas-reineke/lsp-format.nvim"
 	use "hrsh7th/cmp-nvim-lsp"
 	use "hrsh7th/cmp-buffer"
 	use "hrsh7th/cmp-path"
@@ -57,6 +56,7 @@ return require('packer').startup(function(use)
 	use "hoprr/calvera-dark.nvim"
 	use "nyoom-engineering/oxocarbon.nvim"
 	use "xero/miasma.nvim"
+	use "olimorris/onedarkpro.nvim"
 
 	if packer_bootstrap then
 		require('packer').sync()
