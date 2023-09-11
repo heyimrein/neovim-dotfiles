@@ -1,5 +1,5 @@
 local lsps = {
-	-- "lua_ls",
+	"lua_ls",
 	"rust_analyzer",
 	"html",
 	"cssls",
@@ -14,23 +14,12 @@ require "mason-lspconfig".setup {
 
 local lsp = require "lspconfig"
 local capabilities = require "cmp_nvim_lsp".default_capabilities()
-local format = require "lsp-format"
-
-format.setup()
 
 for _, lang in ipairs(lsps) do
 	lsp[lang].setup {
 		capabilities = capabilities,
-		on_attach = format.on_attach
 	}
 end
-
--- for _, lang in ipairs(forms) do
--- 	lsp[lang].setup {
--- 		capabilities = capabilities,
--- 		on_attach = format.on_attach,
--- 	}
--- end
 
 local _border = "double"
 
