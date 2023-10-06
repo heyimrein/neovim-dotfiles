@@ -18,6 +18,7 @@ map("", "K", "<Nop>", opts)
 map("n", "<C-z>", ":undo<CR>", opts)               -- Undo
 map("n", "<Leader>q", ":vertical split<CR>", opts) -- Split Vertically
 map("n", "ra", ":%s/\\<<C-r><C-w>\\>//g<left><left>", opts)
+map("n", "<Leader>k", ":w<CR>", opts)
 
 map("n", "rr", vim.lsp.buf.rename, opts)
 map("n", "<Leader>rf", vim.lsp.buf.format, opts)
