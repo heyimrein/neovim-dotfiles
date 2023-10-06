@@ -49,6 +49,8 @@ return require('packer').startup(function(use)
 
 	use "andweeb/presence.nvim"
 
+	use "registerGen/clock.nvim"
+
 	use "xiyaowong/transparent.nvim"
 	use "projekt0n/github-nvim-theme"
 	use "zootedb0t/citruszest.nvim"
