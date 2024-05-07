@@ -37,6 +37,9 @@ return require('packer').startup(function(use)
 	use "filipdutescu/renamer.nvim"
 	use "kylechui/nvim-surround"
 
+	use "github/copilot.vim"
+	use "CopilotC-Nvim/CopilotChat.nvim"
+
 	use "numToStr/Comment.nvim"
 	use "lukas-reineke/indent-blankline.nvim"
 
