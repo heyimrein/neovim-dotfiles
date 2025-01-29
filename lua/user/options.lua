@@ -10,6 +10,7 @@ local options = {
 	cursorline = true,
 	list = false,
 	hlsearch = false,
+	clipboard = "unnamedplus",
 }
 
 vim.opt.listchars = {}

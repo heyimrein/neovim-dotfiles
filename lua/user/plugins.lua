@@ -45,6 +45,13 @@ return require('packer').startup(function(use)
 
 	use "ggandor/leap.nvim"
 
+	use {
+		"S1M0N38/love2d.nvim",
+		config = function()
+			require("love2d").setup()
+		end
+	}
+
 	use "nvim-tree/nvim-tree.lua"
 	use "nvim-tree/nvim-web-devicons"
 

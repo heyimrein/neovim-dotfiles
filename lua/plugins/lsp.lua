@@ -3,7 +3,7 @@ local lsps = {
 	"rust_analyzer",
 	"html",
 	"cssls",
-	"tsserver",
+	"ts_ls",
 	"pyright",
 }
 
@@ -20,6 +20,20 @@ for _, lang in ipairs(lsps) do
 		capabilities = capabilities,
 	}
 end
+
+lsp.lua_ls.setup {
+	settings = {
+		Lua = {
+			workspace = {
+				library = {
+					[vim.fn.expand "$VIMRUNTIME/lua"] = true,
+					[vim.fn.expand "$VIMRUNTIME/lua/vim/lsp"] = true,
+					[vim.fn.expand "${3rd}/love2d/library"] = true,
+				},
+			},
+		},
+	},
+}
 
 local _border = "double"
 
